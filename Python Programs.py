@@ -518,24 +518,24 @@ for x in range(0,a-1):
             fasak '''
             
 #sol-
-# x=x.split(',')
-# ln=len(x)
-# # print(ln)
-# for a,y in enumerate(x):
-#     try:
-#         # print(a)
-#         if a%2==0:
-#             print(x[a],x[a+1])
-#         else:
-#             pass
-#     except:
-#         pass
+'''x=x.split(',')
+ln=len(x)
+# print(ln)
+for a,y in enumerate(x):
+    try:
+        # print(a)
+        if a%2==0:
+            print(x[a],x[a+1])
+        else:
+            pass
+    except:
+        pass
 
-# else:
-#     if ln % 2 != 0:
-#         print(x[ln-1])
-#     else:
-#         pass
+else:
+    if ln % 2 != 0:
+        print(x[ln-1])
+    else:
+        pass  '''
 
 
 ######## Reading Two Files And Comparing Similar Data Of files and Append every 1000 data to the List and And Again Append all 1000 Listed Lists To Main List,Main List is A List Of list  with 1000 mails   ###
