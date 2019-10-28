@@ -580,6 +580,23 @@ for m,y in enumerate(x):
 
 
 
-#####
+##### Replacing or Modifiying a html file with a list of Matched Words   (File is Only single file reading same file and lot of modifications also in same file 
+
+''' file_read = open("/home/medeaz/Downloads/files/index-01.html",'r',encoding='UTF-8')
+files = file_read.read()
+
+main_names = ['assets/img/favicon.png','./assets/css/bootstrap.min.css','./assets/css/style.css','./assets/css/animate.css',
+              './assets/css/font-awesome.min.css','assets/css/style1.css','./assets/css/toastr.min.css','./assets/js/jquery.min.js',
+              './assets/js/wow.min.js','./assets/js/jquery.vide.min.js','./assets/js/bootstrap.min.js','./assets/js/bootstrap-combobox.js','./assets/js/toastr.min.js','./assets/js/ui-toastr.min.js','./assets/img/loader.gif',
+              ]
+
+for name in main_names:
+    rep_name ='{% static'+' '+"'"+name+"'"+' '+'%}'
+    files = files.replace(name,rep_name)
+    # print('Names---',rep_name)
+
+file_write = open("/home/medeaz/Downloads/files/index-01.html",'w')
+file_write.write(files)
+file_write.close() '''
 
 
