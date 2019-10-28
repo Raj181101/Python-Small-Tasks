@@ -538,5 +538,48 @@ for x in range(0,a-1):
 #         pass
 
 
+######## Reading Two Files And Comparing Similar Data Of files and Append every 1000 data to the List and And Again Append all 1000 Listed Lists To Main List,Main List is A List Of list  with 1000 mails   ###
+#Output -- [[1000 mails],[1000 mails],[1000 mails],[1000 mails]]
+''' import time
+files = open("emails.txt","r") 
+files2 = open("file2.txt","r")
+
+email_list = []
+# email_list1 = []
+
+main_ids =[]
+
+ab= files2.readlines()
+for n,d in enumerate(ab):
+    main_ids.append(d[:-1].strip())
+
+uni = list(set(main_ids))
+print("Previuos Data Uniq Count -- ",len(ab),len(uni))
+
+n=1000
+lens = 0
+lists =[]
+x= files.readlines()
+count =0
+for m,y in enumerate(x):
+    if m <= n:
+        if y[:-1].strip() not in uni and y[:-1].strip() not in lists:
+            lists.append(y[:-1].strip())
+        else:
+            count+=1
+        
+
+    else:
+        #time.sleep(10)
+        lists.append(y[:-1].strip())
+        lens1 = len(lists)
+        lens+=lens1
+        email_list.append(lists)
+        lists=[]
+        n += 1000   '''
+
+
+
+#####
 
 
