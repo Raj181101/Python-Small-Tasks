@@ -505,9 +505,37 @@ for x in range(0,a-1):
 
 
 
+#### Seperating Every Two words Of String with Spaces and print Two words per line ########
             
+#x='hyderabad,namrathaestates,ameerpet,pin-500018,gyhgyhyy,sai,girish,ram,chandu,vamsi,odd,even,sekhar,raj,fasak'
+'''output --- hyderabad namrathaestates
+            ameerpet pin-500018
+            gyhgyhyy sai
+            girish ram
+            chandu vamsi
+            odd even
+            sekhar raj
+            fasak '''
+            
+#sol-
+# x=x.split(',')
+# ln=len(x)
+# # print(ln)
+# for a,y in enumerate(x):
+#     try:
+#         # print(a)
+#         if a%2==0:
+#             print(x[a],x[a+1])
+#         else:
+#             pass
+#     except:
+#         pass
 
-
+# else:
+#     if ln % 2 != 0:
+#         print(x[ln-1])
+#     else:
+#         pass
 
 
 
